@@ -21,39 +21,9 @@ nav{
 }
 
 
-#navbar li a{
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600px;
-    color: white;
-    transition: 0.3s ease-in-out;
 
-}
 
-#navbar li a:hover,
-#navbar li a.active{
-    color: aqua;
-}
-#navbar li a:hover::after,
-#navbar li a.active::after{
-   content:"";
-   width: 30%;
-   height: 2px;
-   background:aqua;
-   position: absolute;
-   bottom: -4px;
-   left: 20px;
 
-}
-
-#mobile i{
-  color: white;
-}
-
-#mobile{
-    display: none;
-
-}
 
 .typingheading{
     font-size: medium;
@@ -65,38 +35,4 @@ nav{
 .imgtyping{
     width: 10%;
     height: 10%;
-}
-
-@media screen and (max-width:760px){
-    #navbar{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        position: fixed;
-        top: 80px;
-        right: -400px;
-        width: 300px;
-        height: 100vh;
-        background-color: black;
-        transition:0.3s ease-in-out;
-
-    }
-    #mobile{
-        display: block;
-        
-    }
-
-    #navbar li{
-        margin-bottom: 25px;
-
-    }
-
-    #navbar i{
-        font-size: 25px;
-    }
-
-    #navbar.active{
-        right:0;
-    }
 }

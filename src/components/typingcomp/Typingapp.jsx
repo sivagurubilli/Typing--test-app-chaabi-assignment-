@@ -26,15 +26,20 @@ function Typingapp() {
     }
   }, [status])
 
+
+  // generating for random numbers everytime using random numbers library
   function generateWords() {
     return new Array(NUMB_OF_WORDS).fill(null).map(() => randomWords())
   }
 
+
+  // set the input while initially enter the character into input field timer started also
   const handlech=(e)=>{
    setCurrInput(e.target.value)
    start()
   }
 
+  // start function to start timer 
   function start() {
 
     if (status === 'finished') {
@@ -81,6 +86,8 @@ function Typingapp() {
     }
   }
 
+
+// checking for words what we enter in input feild and check for paragraph characters using this function 
   function checkMatch() {
     const wordToCompare = words[currWordIndex]
     const doesItMatch = wordToCompare === currInput.trim()
@@ -91,6 +98,7 @@ function Typingapp() {
     }
   }
 
+  // this function is for checking currently typying word if it correct set green color to word else set danger color
   function getCharClass(wordIdx, charIdx, char) {
     if (wordIdx === currWordIndex && charIdx === currCharIndex && currChar && status !== 'finished') {
       if (char === currChar) {
@@ -138,13 +146,11 @@ function Typingapp() {
     <div className="para">
       {words && words.map((el,i)=><p className='wordd'><span>{el.split("").map((char, idx) => ( <span className={getCharClass(i, idx, char)}>{char}</span>)) }</span> </p>)}
         </div>
-    <div className='inputsec' >
-    <input ref={textInput}  type="text" className="input" onKeyDown={handleKeyDown} value={currInput} onChange={handlech}  />
-             
+             <div className='inputsec' >
+                <input ref={textInput}  type="text" className="input" onKeyDown={handleKeyDown} value={currInput} onChange={handlech}  />
+                      <button className='startbut' onClick={start}>start</button>
 
-<button className='startbut' onClick={start}>start</button>
-
-</div>
+             </div>
 
         </div>
   
