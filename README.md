@@ -5,5 +5,5 @@ The user is presented with a passage to type and the app measures the time taken
 calculates the typing speed in words per minute, and displays the result. The app also keeps track of the user's progress over time,
 so the user can see how their typing speed improves with practice.
 
-#tech  stack used - React.js ,css
-
+# tech  stack used - React.js ,css
+deployed link-- https://stunning-douhua-aaa56a.netlify.app/
