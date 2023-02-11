@@ -7,3 +7,5 @@ so the user can see how their typing speed improves with practice.
 
 # tech  stack used - React.js ,css
 deployed link-- https://stunning-douhua-aaa56a.netlify.app/
+
+![app image](https://github.com/sivagurubilli/Typing--test-app-chaabi-assignment-/blob/master/src/assets/Screenshot%20(278).png)
