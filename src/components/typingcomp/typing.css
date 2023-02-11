@@ -1,0 +1,42 @@
+
+
+.para{
+    width: 80%;
+    margin: 1% 10% 5% 10%;
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+}
+
+.wordd{
+    margin-right: 10px;
+}
+
+.secs{
+    width: 100px;
+    margin: 2% 50% 0% 50%;
+
+}
+.h2secs{
+    color: green;
+    font-size: 30px;
+}
+.input{
+    width: 50%;
+    height: 50px;
+    margin-left: 10%;
+    border: 1px solid grey;
+    
+}
+.startbut{
+    width: 150px;
+    height: 40px;
+    background-color: green;
+    border-radius: 30px;
+    margin-left: 100px;
+   
+}
+
+.inputsec{
+    display:flex;
+}
